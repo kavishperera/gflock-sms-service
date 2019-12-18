@@ -1,0 +1,960 @@
+2018-12-01 14:46:02 - Starting GflockSmsServiceApplication on kavishmanjitha with PID 8052 (C:\bitbucket\supervision\gflock-all-projects-2018-11-08\gflock-sms-service\target\classes started by kavish manjitha in C:\bitbucket\supervision\gflock-all-projects-2018-11-08\gflock-sms-service)
+2018-12-01 14:46:02 - No active profile set, falling back to default profiles: default
+2018-12-01 14:46:02 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ac13091: startup date [Sat Dec 01 14:46:02 IST 2018]; root of context hierarchy
+2018-12-01 14:46:04 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$36008335] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-01 14:46:05 - Tomcat initialized with port(s): 8086 (http)
+2018-12-01 14:46:05 - Starting service [Tomcat]
+2018-12-01 14:46:05 - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-12-01 14:46:05 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\PuTTY\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\flutter\bin;C:\Users\kavish manjitha\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\Users\kavish manjitha\AppData\Local\GitHubDesktop\bin;C:\cmder\bin;C:\flutter\bin;.]
+2018-12-01 14:46:05 - Initializing Spring embedded WebApplicationContext
+2018-12-01 14:46:05 - Root WebApplicationContext: initialization completed in 3103 ms
+2018-12-01 14:46:06 - Servlet dispatcherServlet mapped to [/]
+2018-12-01 14:46:06 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-01 14:46:06 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-01 14:46:06 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-01 14:46:06 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-01 14:46:06 - HikariPool-1 - Starting...
+2018-12-01 14:46:11 - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'112.134.83.14' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2190)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:319)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:356)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:166)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:111)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$54d745a4.CGLIB$jpaVendorAdapter$4(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$54d745a4$$FastClassBySpringCGLIB$$6c858a15.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$54d745a4.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at lk.kavishmanjitha.gflock_sms_service.main.GflockSmsServiceApplication.main(GflockSmsServiceApplication.java:15)
+2018-12-01 14:46:11 - Unable to determine jdbc url from datasource
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'112.134.83.14' (using password: YES)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:328)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:356)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:166)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:111)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$54d745a4.CGLIB$jpaVendorAdapter$4(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$54d745a4$$FastClassBySpringCGLIB$$6c858a15.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$54d745a4.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at lk.kavishmanjitha.gflock_sms_service.main.GflockSmsServiceApplication.main(GflockSmsServiceApplication.java:15)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'112.134.83.14' (using password: YES)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:319)
+	... 61 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'root'@'112.134.83.14' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2190)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	... 62 common frames omitted
+2018-12-01 14:46:11 - HikariPool-1 - Starting...
+2018-12-01 14:46:12 - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'112.134.83.14' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2190)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324)
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:123)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateDefaultDdlAutoProvider.getDefaultDdlAuto(HibernateDefaultDdlAutoProvider.java:42)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.lambda$getVendorProperties$0(HibernateJpaConfiguration.java:132)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateSettings.getDdlAuto(HibernateSettings.java:53)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate.determineDdlAuto(JpaProperties.java:247)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate.getAdditionalProperties(JpaProperties.java:216)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate.access$000(JpaProperties.java:169)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.getHibernateProperties(JpaProperties.java:153)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.getVendorProperties(HibernateJpaConfiguration.java:134)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.entityManagerFactory(JpaBaseConfiguration.java:135)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$54d745a4.CGLIB$entityManagerFactory$6(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$54d745a4$$FastClassBySpringCGLIB$$6c858a15.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$54d745a4.entityManagerFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at lk.kavishmanjitha.gflock_sms_service.main.GflockSmsServiceApplication.main(GflockSmsServiceApplication.java:15)
+2018-12-01 14:46:12 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-01 14:46:12 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-01 14:46:12 - HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-01 14:46:12 - HHH000206: hibernate.properties not found
+2018-12-01 14:46:12 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-01 14:46:13 - HikariPool-1 - Starting...
+2018-12-01 14:46:14 - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'112.134.83.14' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2190)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1767)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1704)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at lk.kavishmanjitha.gflock_sms_service.main.GflockSmsServiceApplication.main(GflockSmsServiceApplication.java:15)
+2018-12-01 14:46:14 - HHH000342: Could not obtain connection to query metadata : Access denied for user 'root'@'112.134.83.14' (using password: YES)
+2018-12-01 14:46:14 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-01 14:46:14 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-12-01 14:46:15 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-01 14:46:15 - HikariPool-1 - Starting...
+2018-12-01 14:46:16 - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'112.134.83.14' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2190)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324)
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:123)
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.lambda$isInitializingDatabase$0(DataSourceInitializedPublisher.java:95)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateSettings.getDdlAuto(HibernateSettings.java:53)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate.determineDdlAuto(JpaProperties.java:247)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate.getAdditionalProperties(JpaProperties.java:216)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate.access$000(JpaProperties.java:169)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.getHibernateProperties(JpaProperties.java:153)
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.isInitializingDatabase(DataSourceInitializedPublisher.java:97)
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.publishEventIfRequired(DataSourceInitializedPublisher.java:77)
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.postProcessAfterInitialization(DataSourceInitializedPublisher.java:70)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.postProcessObjectFromFactoryBean(AbstractAutowireCapableBeanFactory.java:1850)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:116)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:257)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:625)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:444)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:312)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1611)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1363)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1350)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1350)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at lk.kavishmanjitha.gflock_sms_service.main.GflockSmsServiceApplication.main(GflockSmsServiceApplication.java:15)
+2018-12-01 14:46:17 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-01 14:46:17 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ac13091: startup date [Sat Dec 01 14:46:02 IST 2018]; root of context hierarchy
+2018-12-01 14:46:17 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-01 14:46:17 - Mapped "{[/api/v1/gflock-sms-service/find-sms-sent-users],methods=[GET]}" onto public java.util.List<lk.kavishmanjitha.gflock_sms_service.main.entity.MainSsmsNumbers> lk.kavishmanjitha.gflock_sms_service.main.controller.MainSsmsNumbersController.findAllSmsSentNumbersDetails()
+2018-12-01 14:46:17 - Mapped "{[/api/v1/gflock-sms-service/log-download],methods=[GET]}" onto public void lk.kavishmanjitha.gflock_sms_service.main.controller.MainSsmsNumbersController.downloadImage(javax.servlet.http.HttpServletResponse) throws java.io.FileNotFoundException,java.io.IOException
+2018-12-01 14:46:17 - Mapped "{[/api/v1/gflock-sms-service/manual-sent-sms],methods=[GET]}" onto public java.lang.Integer lk.kavishmanjitha.gflock_sms_service.main.controller.MainSsmsNumbersController.manualSentSms()
+2018-12-01 14:46:17 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-01 14:46:17 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-01 14:46:17 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-01 14:46:17 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-01 14:46:18 - Registering beans for JMX exposure on startup
+2018-12-01 14:46:18 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-01 14:46:18 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-12-01 14:46:18 - Initializing ExecutorService 
+2018-12-01 14:46:18 - Tomcat started on port(s): 8086 (http) with context path ''
+2018-12-01 14:46:18 - Started GflockSmsServiceApplication in 16.078 seconds (JVM running for 16.765)
+2018-12-01 14:46:18 - START GFLOCK SMS SERVER
+2018-12-01 14:47:30 - Starting GflockSmsServiceApplication on kavishmanjitha with PID 5108 (C:\bitbucket\supervision\gflock-all-projects-2018-11-08\gflock-sms-service\target\classes started by kavish manjitha in C:\bitbucket\supervision\gflock-all-projects-2018-11-08\gflock-sms-service)
+2018-12-01 14:47:30 - No active profile set, falling back to default profiles: default
+2018-12-01 14:47:30 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5276e6b0: startup date [Sat Dec 01 14:47:30 IST 2018]; root of context hierarchy
+2018-12-01 14:47:32 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$93d5e69c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-01 14:47:32 - Tomcat initialized with port(s): 8086 (http)
+2018-12-01 14:47:32 - Starting service [Tomcat]
+2018-12-01 14:47:32 - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-12-01 14:47:32 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\PuTTY\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\flutter\bin;C:\Users\kavish manjitha\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\Users\kavish manjitha\AppData\Local\GitHubDesktop\bin;C:\cmder\bin;C:\flutter\bin;.]
+2018-12-01 14:47:32 - Initializing Spring embedded WebApplicationContext
+2018-12-01 14:47:32 - Root WebApplicationContext: initialization completed in 2727 ms
+2018-12-01 14:47:33 - Servlet dispatcherServlet mapped to [/]
+2018-12-01 14:47:33 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-01 14:47:33 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-01 14:47:33 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-01 14:47:33 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-01 14:47:33 - HikariPool-1 - Starting...
+2018-12-01 14:47:39 - HikariPool-1 - Start completed.
+2018-12-01 14:47:39 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-01 14:47:39 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-01 14:47:39 - HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-01 14:47:39 - HHH000206: hibernate.properties not found
+2018-12-01 14:47:39 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-01 14:47:39 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-01 14:47:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-01 14:47:41 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-01 14:47:41 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5276e6b0: startup date [Sat Dec 01 14:47:30 IST 2018]; root of context hierarchy
+2018-12-01 14:47:41 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-01 14:47:41 - Mapped "{[/api/v1/gflock-sms-service/find-sms-sent-users],methods=[GET]}" onto public java.util.List<lk.kavishmanjitha.gflock_sms_service.main.entity.MainSsmsNumbers> lk.kavishmanjitha.gflock_sms_service.main.controller.MainSsmsNumbersController.findAllSmsSentNumbersDetails()
+2018-12-01 14:47:41 - Mapped "{[/api/v1/gflock-sms-service/log-download],methods=[GET]}" onto public void lk.kavishmanjitha.gflock_sms_service.main.controller.MainSsmsNumbersController.downloadImage(javax.servlet.http.HttpServletResponse) throws java.io.FileNotFoundException,java.io.IOException
+2018-12-01 14:47:41 - Mapped "{[/api/v1/gflock-sms-service/manual-sent-sms],methods=[GET]}" onto public java.lang.Integer lk.kavishmanjitha.gflock_sms_service.main.controller.MainSsmsNumbersController.manualSentSms()
+2018-12-01 14:47:41 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-01 14:47:41 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-01 14:47:41 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-01 14:47:41 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-01 14:47:42 - Registering beans for JMX exposure on startup
+2018-12-01 14:47:42 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-01 14:47:42 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-12-01 14:47:42 - Initializing ExecutorService 
+2018-12-01 14:47:42 - Tomcat started on port(s): 8086 (http) with context path ''
+2018-12-01 14:47:42 - Started GflockSmsServiceApplication in 12.86 seconds (JVM running for 13.296)
+2018-12-01 14:47:42 - START GFLOCK SMS SERVER
+2018-12-01 15:00:00 - 15:00 PM CLOCK SENT SMS15:00:00
+2018-12-01 15:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@5a779bc3 (No operations allowed after connection closed.)
+2018-12-01 15:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@2db78fbe (No operations allowed after connection closed.)
+2018-12-01 15:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@4b78a048 (No operations allowed after connection closed.)
+2018-12-01 15:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@21c1e097 (No operations allowed after connection closed.)
+2018-12-01 15:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@13d12aa7 (No operations allowed after connection closed.)
+2018-12-01 15:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@28a8d1c (No operations allowed after connection closed.)
+2018-12-01 15:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@c7e17e5 (No operations allowed after connection closed.)
+2018-12-01 15:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@22159ba5 (No operations allowed after connection closed.)
+2018-12-01 15:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@388b0952 (No operations allowed after connection closed.)
+2018-12-01 15:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@6e3f8132 (No operations allowed after connection closed.)
+2018-12-01 15:00:01 - HHH000397: Using ASTQueryTranslatorFactory
+2018-12-01 15:00:02 - --------------------------------------------------------------------------
+2018-12-01 15:00:02 - 
+ Date 2018-12-01
+ Time 03:00:02 PM
+ Sale -  1,302,810.00
+ Item Qty -  522
+ No Of Bills -  272
+ Shoes Pair -  6
+ Basket Value -  4790
+2018-12-01 15:00:02 - --------------------------------------------------------------------------
+2018-12-01 15:00:04 - SENT GFLOCK SMS kavish manjitha - 94714303339
+2018-12-01 15:00:04 - 
+ Date 2018-12-01
+ Time 03:00:04 PM
+ Sale -  1,302,810.00
+ Item Qty -  522
+ No Of Bills -  272
+ Shoes Pair -  6
+ Basket Value -  4790
+2018-12-01 15:00:04 - --------------------------------------------------------------------------
+2018-12-01 15:00:05 - SENT GFLOCK SMS roshan perera - 94777871144
+2018-12-01 15:00:05 - 
+ Date 2018-12-01
+ Time 03:00:05 PM
+ Sale -  1,302,810.00
+ Item Qty -  522
+ No Of Bills -  272
+ Shoes Pair -  6
+ Basket Value -  4790
+2018-12-01 15:00:05 - --------------------------------------------------------------------------
+2018-12-01 15:00:07 - SENT GFLOCK SMS sanajaya gflock account - 94767815010
+2018-12-01 15:00:07 - 
+ Date 2018-12-01
+ Time 03:00:07 PM
+ Sale -  1,302,810.00
+ Item Qty -  522
+ No Of Bills -  272
+ Shoes Pair -  6
+ Basket Value -  4790
+2018-12-01 15:00:07 - --------------------------------------------------------------------------
+2018-12-01 15:00:08 - SENT GFLOCK SMS sales - 94726777777
+2018-12-01 15:00:08 - 
+ Date 2018-12-01
+ Time 03:00:08 PM
+ Sale -  1,302,810.00
+ Item Qty -  522
+ No Of Bills -  272
+ Shoes Pair -  6
+ Basket Value -  4790
+2018-12-01 15:00:08 - --------------------------------------------------------------------------
+2018-12-01 15:00:10 - SENT GFLOCK SMS ranil (owner) - 94772741414
+2018-12-01 15:00:10 - 
+ Date 2018-12-01
+ Time 03:00:10 PM
+ Sale -  1,302,810.00
+ Item Qty -  522
+ No Of Bills -  272
+ Shoes Pair -  6
+ Basket Value -  4790
+2018-12-01 15:00:10 - --------------------------------------------------------------------------
+2018-12-01 15:00:11 - SENT GFLOCK SMS ranil wasantha - 94777234453
+2018-12-01 15:00:11 - 
+ Date 2018-12-01
+ Time 03:00:11 PM
+ Sale -  1,302,810.00
+ Item Qty -  522
+ No Of Bills -  272
+ Shoes Pair -  6
+ Basket Value -  4790
+2018-12-01 15:00:11 - --------------------------------------------------------------------------
+2018-12-01 15:00:13 - SENT GFLOCK SMS Niki - 94718055055
+2018-12-01 15:00:13 - 
+ Date 2018-12-01
+ Time 03:00:13 PM
+ Sale -  1,302,810.00
+ Item Qty -  522
+ No Of Bills -  272
+ Shoes Pair -  6
+ Basket Value -  4790
+2018-12-01 15:00:13 - --------------------------------------------------------------------------
+2018-12-01 15:00:15 - SENT GFLOCK SMS Pradeep - 94765514551
+2018-12-01 15:00:15 - 
+ Date 2018-12-01
+ Time 03:00:15 PM
+ Sale -  1,302,810.00
+ Item Qty -  522
+ No Of Bills -  272
+ Shoes Pair -  6
+ Basket Value -  4790
+2018-12-01 15:00:15 - --------------------------------------------------------------------------
+2018-12-01 15:00:16 - SENT GFLOCK SMS Leo - 94704447494
+2018-12-01 15:00:16 - --------------------------------------------------------------------------
+2018-12-01 17:00:00 - 17.00 PM CLOCK SENT SMS17:00:00
+2018-12-01 17:00:01 - --------------------------------------------------------------------------
+2018-12-01 17:00:01 - 
+ Date 2018-12-01
+ Time 05:00:01 PM
+ Sale -  2,037,090.00
+ Item Qty -  807
+ No Of Bills -  416
+ Shoes Pair -  7
+ Basket Value -  4897
+2018-12-01 17:00:01 - --------------------------------------------------------------------------
+2018-12-01 17:00:05 - SENT GFLOCK SMS kavish manjitha - 94714303339
+2018-12-01 17:00:05 - 
+ Date 2018-12-01
+ Time 05:00:05 PM
+ Sale -  2,037,090.00
+ Item Qty -  807
+ No Of Bills -  416
+ Shoes Pair -  7
+ Basket Value -  4897
+2018-12-01 17:00:05 - --------------------------------------------------------------------------
+2018-12-01 17:00:06 - SENT GFLOCK SMS roshan perera - 94777871144
+2018-12-01 17:00:06 - 
+ Date 2018-12-01
+ Time 05:00:06 PM
+ Sale -  2,037,090.00
+ Item Qty -  807
+ No Of Bills -  416
+ Shoes Pair -  7
+ Basket Value -  4897
+2018-12-01 17:00:06 - --------------------------------------------------------------------------
+2018-12-01 17:00:08 - SENT GFLOCK SMS sanajaya gflock account - 94767815010
+2018-12-01 17:00:08 - 
+ Date 2018-12-01
+ Time 05:00:08 PM
+ Sale -  2,037,090.00
+ Item Qty -  807
+ No Of Bills -  416
+ Shoes Pair -  7
+ Basket Value -  4897
+2018-12-01 17:00:08 - --------------------------------------------------------------------------
+2018-12-01 17:00:10 - SENT GFLOCK SMS sales - 94726777777
+2018-12-01 17:00:10 - 
+ Date 2018-12-01
+ Time 05:00:10 PM
+ Sale -  2,037,090.00
+ Item Qty -  807
+ No Of Bills -  416
+ Shoes Pair -  7
+ Basket Value -  4897
+2018-12-01 17:00:10 - --------------------------------------------------------------------------
+2018-12-01 17:00:11 - SENT GFLOCK SMS ranil (owner) - 94772741414
+2018-12-01 17:00:11 - 
+ Date 2018-12-01
+ Time 05:00:11 PM
+ Sale -  2,037,090.00
+ Item Qty -  807
+ No Of Bills -  416
+ Shoes Pair -  7
+ Basket Value -  4897
+2018-12-01 17:00:11 - --------------------------------------------------------------------------
+2018-12-01 17:00:13 - SENT GFLOCK SMS ranil wasantha - 94777234453
+2018-12-01 17:00:13 - 
+ Date 2018-12-01
+ Time 05:00:13 PM
+ Sale -  2,037,090.00
+ Item Qty -  807
+ No Of Bills -  416
+ Shoes Pair -  7
+ Basket Value -  4897
+2018-12-01 17:00:13 - --------------------------------------------------------------------------
+2018-12-01 17:00:15 - SENT GFLOCK SMS Niki - 94718055055
+2018-12-01 17:00:15 - 
+ Date 2018-12-01
+ Time 05:00:15 PM
+ Sale -  2,037,090.00
+ Item Qty -  807
+ No Of Bills -  416
+ Shoes Pair -  7
+ Basket Value -  4897
+2018-12-01 17:00:15 - --------------------------------------------------------------------------
+2018-12-01 17:00:17 - SENT GFLOCK SMS Pradeep - 94765514551
+2018-12-01 17:00:17 - 
+ Date 2018-12-01
+ Time 05:00:17 PM
+ Sale -  2,037,090.00
+ Item Qty -  807
+ No Of Bills -  416
+ Shoes Pair -  7
+ Basket Value -  4897
+2018-12-01 17:00:17 - --------------------------------------------------------------------------
+2018-12-01 17:00:19 - SENT GFLOCK SMS Leo - 94704447494
+2018-12-01 17:00:19 - --------------------------------------------------------------------------
+2018-12-01 18:53:29 - Starting GflockSmsServiceApplication on kavishmanjitha with PID 6308 (C:\bitbucket\supervision\gflock-all-projects-2018-11-08\gflock-sms-service\target\classes started by kavish manjitha in C:\bitbucket\supervision\gflock-all-projects-2018-11-08\gflock-sms-service)
+2018-12-01 18:53:29 - No active profile set, falling back to default profiles: default
+2018-12-01 18:53:29 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6b26e945: startup date [Sat Dec 01 18:53:29 IST 2018]; root of context hierarchy
+2018-12-01 18:53:31 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e0481e5c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-01 18:53:32 - Tomcat initialized with port(s): 8086 (http)
+2018-12-01 18:53:32 - Starting service [Tomcat]
+2018-12-01 18:53:32 - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-12-01 18:53:32 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\PuTTY\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\flutter\bin;C:\Users\kavish manjitha\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\Users\kavish manjitha\AppData\Local\GitHubDesktop\bin;C:\cmder\bin;C:\flutter\bin;.]
+2018-12-01 18:53:32 - Initializing Spring embedded WebApplicationContext
+2018-12-01 18:53:32 - Root WebApplicationContext: initialization completed in 2754 ms
+2018-12-01 18:53:32 - Servlet dispatcherServlet mapped to [/]
+2018-12-01 18:53:32 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-01 18:53:32 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-01 18:53:32 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-01 18:53:32 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-01 18:53:32 - HikariPool-1 - Starting...
+2018-12-01 18:53:33 - HikariPool-1 - Start completed.
+2018-12-01 18:53:34 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-01 18:53:34 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-01 18:53:34 - HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-01 18:53:34 - HHH000206: hibernate.properties not found
+2018-12-01 18:53:34 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-01 18:53:34 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-01 18:53:35 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-01 18:53:36 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-01 18:53:36 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6b26e945: startup date [Sat Dec 01 18:53:29 IST 2018]; root of context hierarchy
+2018-12-01 18:53:36 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-01 18:53:36 - Mapped "{[/api/v1/gflock-sms-service/log-download],methods=[GET]}" onto public void lk.kavishmanjitha.gflock_sms_service.main.controller.MainSsmsNumbersController.downloadImage(javax.servlet.http.HttpServletResponse) throws java.io.FileNotFoundException,java.io.IOException
+2018-12-01 18:53:36 - Mapped "{[/api/v1/gflock-sms-service/manual-sent-sms],methods=[GET]}" onto public java.lang.Integer lk.kavishmanjitha.gflock_sms_service.main.controller.MainSsmsNumbersController.manualSentSms()
+2018-12-01 18:53:36 - Mapped "{[/api/v1/gflock-sms-service/find-sms-sent-users],methods=[GET]}" onto public java.util.List<lk.kavishmanjitha.gflock_sms_service.main.entity.MainSsmsNumbers> lk.kavishmanjitha.gflock_sms_service.main.controller.MainSsmsNumbersController.findAllSmsSentNumbersDetails()
+2018-12-01 18:53:36 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-01 18:53:36 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-01 18:53:36 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-01 18:53:36 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-01 18:53:36 - Registering beans for JMX exposure on startup
+2018-12-01 18:53:36 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-01 18:53:36 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-12-01 18:53:37 - Initializing ExecutorService 
+2018-12-01 18:53:37 - Tomcat started on port(s): 8086 (http) with context path ''
+2018-12-01 18:53:37 - Started GflockSmsServiceApplication in 8.356 seconds (JVM running for 8.97)
+2018-12-01 18:53:37 - START GFLOCK SMS SERVER
+2018-12-01 19:00:00 - 19.00 PM CLOCK SENT SMS19:00:00
+2018-12-01 19:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@4d1032b0 (No operations allowed after connection closed.)
+2018-12-01 19:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@363c2987 (No operations allowed after connection closed.)
+2018-12-01 19:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@7a750842 (No operations allowed after connection closed.)
+2018-12-01 19:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@2f3ecfa3 (No operations allowed after connection closed.)
+2018-12-01 19:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@3356ccfc (No operations allowed after connection closed.)
+2018-12-01 19:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@6471bb00 (No operations allowed after connection closed.)
+2018-12-01 19:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@369488d4 (No operations allowed after connection closed.)
+2018-12-01 19:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@6f0e1a72 (No operations allowed after connection closed.)
+2018-12-01 19:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@6a3a1a43 (No operations allowed after connection closed.)
+2018-12-01 19:00:00 - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@3fa15bf (No operations allowed after connection closed.)
+2018-12-01 19:00:01 - HHH000397: Using ASTQueryTranslatorFactory
+2018-12-01 19:00:01 - --------------------------------------------------------------------------
+2018-12-01 19:00:01 - 
+ Date 2018-12-01
+ Time 07:00:01 PM
+ Sale -  2,713,090.00
+ Item Qty -  1068
+ No Of Bills -  549
+ Shoes Pair -  7
+ Basket Value -  4942
+2018-12-01 19:00:01 - --------------------------------------------------------------------------
+2018-12-01 19:00:04 - SENT GFLOCK SMS kavish manjitha - 94714303339
+2018-12-01 19:00:04 - 
+ Date 2018-12-01
+ Time 07:00:04 PM
+ Sale -  2,713,090.00
+ Item Qty -  1068
+ No Of Bills -  549
+ Shoes Pair -  7
+ Basket Value -  4942
+2018-12-01 19:00:04 - --------------------------------------------------------------------------
+2018-12-01 19:00:06 - SENT GFLOCK SMS roshan perera - 94777871144
+2018-12-01 19:00:06 - 
+ Date 2018-12-01
+ Time 07:00:06 PM
+ Sale -  2,713,090.00
+ Item Qty -  1068
+ No Of Bills -  549
+ Shoes Pair -  7
+ Basket Value -  4942
+2018-12-01 19:00:06 - --------------------------------------------------------------------------
+2018-12-01 19:00:07 - SENT GFLOCK SMS sanajaya gflock account - 94767815010
+2018-12-01 19:00:07 - 
+ Date 2018-12-01
+ Time 07:00:07 PM
+ Sale -  2,713,090.00
+ Item Qty -  1068
+ No Of Bills -  549
+ Shoes Pair -  7
+ Basket Value -  4942
+2018-12-01 19:00:07 - --------------------------------------------------------------------------
+2018-12-01 19:00:09 - SENT GFLOCK SMS sales - 94726777777
+2018-12-01 19:00:09 - 
+ Date 2018-12-01
+ Time 07:00:09 PM
+ Sale -  2,713,090.00
+ Item Qty -  1068
+ No Of Bills -  549
+ Shoes Pair -  7
+ Basket Value -  4942
+2018-12-01 19:00:09 - --------------------------------------------------------------------------
+2018-12-01 19:00:10 - SENT GFLOCK SMS ranil (owner) - 94772741414
+2018-12-01 19:00:10 - 
+ Date 2018-12-01
+ Time 07:00:10 PM
+ Sale -  2,713,090.00
+ Item Qty -  1068
+ No Of Bills -  549
+ Shoes Pair -  7
+ Basket Value -  4942
+2018-12-01 19:00:10 - --------------------------------------------------------------------------
+2018-12-01 19:00:12 - SENT GFLOCK SMS ranil wasantha - 94777234453
+2018-12-01 19:00:12 - 
+ Date 2018-12-01
+ Time 07:00:12 PM
+ Sale -  2,713,090.00
+ Item Qty -  1068
+ No Of Bills -  549
+ Shoes Pair -  7
+ Basket Value -  4942
+2018-12-01 19:00:12 - --------------------------------------------------------------------------
+2018-12-01 19:00:13 - SENT GFLOCK SMS Niki - 94718055055
+2018-12-01 19:00:13 - 
+ Date 2018-12-01
+ Time 07:00:13 PM
+ Sale -  2,713,090.00
+ Item Qty -  1068
+ No Of Bills -  549
+ Shoes Pair -  7
+ Basket Value -  4942
+2018-12-01 19:00:13 - --------------------------------------------------------------------------
+2018-12-01 19:00:15 - SENT GFLOCK SMS Pradeep - 94765514551
+2018-12-01 19:00:15 - 
+ Date 2018-12-01
+ Time 07:00:15 PM
+ Sale -  2,713,090.00
+ Item Qty -  1068
+ No Of Bills -  549
+ Shoes Pair -  7
+ Basket Value -  4942
+2018-12-01 19:00:15 - --------------------------------------------------------------------------
+2018-12-01 19:00:16 - SENT GFLOCK SMS Leo - 94704447494
+2018-12-01 19:00:16 - --------------------------------------------------------------------------
+2018-12-01 20:59:59 - 21:00 PM CLOCK SENT FINAL SMS20:59:59
+2018-12-01 21:00:01 - --------------------------------------------------------------------------
+2018-12-01 21:00:01 - 
+ Date 2018-12-01
+ Time 09:00:01 PM
+ Sale -  2,984,195.00
+ Item Qty -  1173
+ No Of Bills -  609
+ Shoes Pair -  7
+ Basket Value -  4900
+2018-12-01 21:00:01 - --------------------------------------------------------------------------
+2018-12-01 21:00:02 - SENT GFLOCK SMS kavish manjitha - 94714303339
+2018-12-01 21:00:02 - 
+ Date 2018-12-01
+ Time 09:00:02 PM
+ Sale -  2,984,195.00
+ Item Qty -  1173
+ No Of Bills -  609
+ Shoes Pair -  7
+ Basket Value -  4900
+2018-12-01 21:00:02 - --------------------------------------------------------------------------
+2018-12-01 21:00:04 - SENT GFLOCK SMS roshan perera - 94777871144
+2018-12-01 21:00:04 - 
+ Date 2018-12-01
+ Time 09:00:04 PM
+ Sale -  2,984,195.00
+ Item Qty -  1173
+ No Of Bills -  609
+ Shoes Pair -  7
+ Basket Value -  4900
+2018-12-01 21:00:04 - --------------------------------------------------------------------------
+2018-12-01 21:00:06 - SENT GFLOCK SMS sanajaya gflock account - 94767815010
+2018-12-01 21:00:06 - 
+ Date 2018-12-01
+ Time 09:00:06 PM
+ Sale -  2,984,195.00
+ Item Qty -  1173
+ No Of Bills -  609
+ Shoes Pair -  7
+ Basket Value -  4900
+2018-12-01 21:00:06 - --------------------------------------------------------------------------
+2018-12-01 21:00:07 - SENT GFLOCK SMS sales - 94726777777
+2018-12-01 21:00:07 - 
+ Date 2018-12-01
+ Time 09:00:07 PM
+ Sale -  2,984,195.00
+ Item Qty -  1173
+ No Of Bills -  609
+ Shoes Pair -  7
+ Basket Value -  4900
+2018-12-01 21:00:07 - --------------------------------------------------------------------------
+2018-12-01 21:00:09 - SENT GFLOCK SMS ranil (owner) - 94772741414
+2018-12-01 21:00:09 - 
+ Date 2018-12-01
+ Time 09:00:09 PM
+ Sale -  2,984,195.00
+ Item Qty -  1173
+ No Of Bills -  609
+ Shoes Pair -  7
+ Basket Value -  4900
+2018-12-01 21:00:09 - --------------------------------------------------------------------------
+2018-12-01 21:00:10 - SENT GFLOCK SMS ranil wasantha - 94777234453
+2018-12-01 21:00:10 - 
+ Date 2018-12-01
+ Time 09:00:10 PM
+ Sale -  2,984,195.00
+ Item Qty -  1173
+ No Of Bills -  609
+ Shoes Pair -  7
+ Basket Value -  4900
+2018-12-01 21:00:10 - --------------------------------------------------------------------------
+2018-12-01 21:00:12 - SENT GFLOCK SMS Niki - 94718055055
+2018-12-01 21:00:12 - 
+ Date 2018-12-01
+ Time 09:00:12 PM
+ Sale -  2,984,195.00
+ Item Qty -  1173
+ No Of Bills -  609
+ Shoes Pair -  7
+ Basket Value -  4900
+2018-12-01 21:00:12 - --------------------------------------------------------------------------
+2018-12-01 21:00:14 - SENT GFLOCK SMS Pradeep - 94765514551
+2018-12-01 21:00:14 - 
+ Date 2018-12-01
+ Time 09:00:14 PM
+ Sale -  2,984,195.00
+ Item Qty -  1173
+ No Of Bills -  609
+ Shoes Pair -  7
+ Basket Value -  4900
+2018-12-01 21:00:14 - --------------------------------------------------------------------------
+2018-12-01 21:00:15 - SENT GFLOCK SMS Leo - 94704447494
+2018-12-01 21:00:15 - --------------------------------------------------------------------------
